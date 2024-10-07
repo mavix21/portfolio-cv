@@ -1,0 +1,73 @@
+---
+import { basics } from "@cv-en";
+import CVSection from "../CVSection.astro";
+import WorldMap from "../icons/WorldMap.astro";
+import ContactLink from "../ContactLink.astro";
+
+const { name, label, image, location, profiles, phone, email } = basics;
+
+const { city, country, region } = location;
+
+const linkedinInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedInUrl = linkedinInfo?.url;
+
+const printInfo = [email, phone, linkedInUrl].filter(Boolean).join(" • ");
+---
+
+<CVSection>
+  <div class="flex justify-between items-center">
+    <div class="space-y-3">
+      <h1 class="text-2xl font-bold leading-none">{name}</h1>
+      <div class="space-y-0.5">
+        <p>{label}</p>
+        <div class="flex gap-1 items-center">
+          <WorldMap />
+          <span class="text-sm font-light">
+            {city}, {country}
+          </span>
+        </div>
+      </div>
+      <footer class="hidden print:block text-xs">
+        {printInfo}
+      </footer>
+      <footer class="flex gap-2 items-center print:hidden">
+        {
+          email && (
+            <ContactLink
+              url={`mailto:${email}`}
+              contactVia="email"
+              title={`Send email to ${email}`}
+            />
+          )
+        }
+        {
+          phone && (
+            <ContactLink
+              url={`tel:${phone}`}
+              contactVia="phone"
+              title={`Call ${name} at ${phone}`}
+            />
+          )
+        }
+        {
+          profiles.map(({ network, url }) => {
+            return (
+              <ContactLink
+                contactVia={network}
+                title={`Visit ${name} profile in ${network}`}
+                url={url}
+              />
+            );
+          })
+        }
+      </footer>
+    </div>
+    <figure class="shrink-0">
+      <img
+        class="rounded-md aspect-square object-cover"
+        src={image}
+        alt={name}
+      />
+    </figure>
+  </div>
+</CVSection>

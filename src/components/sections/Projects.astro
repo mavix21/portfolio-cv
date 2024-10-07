@@ -1,0 +1,37 @@
+---
+import CVSection from "../CVSection.astro";
+import { projects } from "@cv-en";
+---
+
+<CVSection heading="Projects">
+  <ul class="grid grid-auto-fit [--grid-fit-size:180px] gap-2">
+    {
+      projects.map(({ url, description, highlights, name, isActive }) => {
+        return (
+          <li class="border rounded-md p-3">
+            <article class="flex flex-col gap-2 h-full">
+              <header class="space-y-2">
+                <h3 class="text font-bold">
+                  <a href={url} title={`See project ${name}`}>
+                    {name}
+                  </a>
+                  {isActive && <span class="text-green-400">&bull;</span>}
+                </h3>
+                <p class="leading-tight text-sm">{description}</p>
+              </header>
+              <footer class="mt-auto">
+                <ul class="flex gap-1 text-xs">
+                  {highlights.map((highlight) => (
+                    <li class="py-0.5 px-2 bg-zinc-100 text-zinc-700 font-semibold rounded-full">
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</CVSection>

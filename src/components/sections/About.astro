@@ -1,0 +1,10 @@
+---
+import CVSection from "../CVSection.astro";
+import { basics } from "@cv-en";
+
+const { summary } = basics;
+---
+
+<CVSection heading="About">
+  <p>{summary}</p>
+</CVSection>

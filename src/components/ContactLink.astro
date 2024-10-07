@@ -1,0 +1,37 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import LinkedIn from "./icons/LinkedIn.astro";
+import Email from "./icons/Email.astro";
+import X from "./icons/X.astro";
+import Phone from "./icons/Phone.astro";
+
+type ContactVia = "email" | "phone" | "Github" | "X" | "Linkedin";
+
+interface Props {
+  title: string;
+  url: string;
+  contactVia: string;
+}
+
+const SOCIAL_ICONS: Record<string, any> = {
+  email: Email,
+  phone: Phone,
+  GitHub,
+  LinkedIn,
+  X,
+};
+
+const { url, title, contactVia } = Astro.props;
+
+const Icon = SOCIAL_ICONS[contactVia];
+---
+
+<a
+  href={url}
+  title={title}
+  class="p-1 hover:bg-zinc-100 focus-visible:bg-zinc-100 border hover:border-zinc-400/60 transition-colors rounded-md ring-offset-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500 focus-visible:ring-offset-2"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  {Icon && <Icon />}
+</a>

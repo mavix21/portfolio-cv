@@ -1,0 +1,17 @@
+---
+import CVSection from "../CVSection.astro";
+import { skills } from "@cv-en";
+---
+
+<CVSection heading="Skills">
+  <ul class="flex gap-2 flex-wrap">
+    {
+      skills.map(({ name }) => (
+        <li class="py-0.5 px-2 bg-zinc-100 text-zinc-600 font-medium rounded-full">
+        <!--<li class="py-0.5 px-2 border border-zinc-300 hover:bg-zinc-50 hover:border-zinc-400/60 cursor-pointer rounded-full">-->
+          <span>{name}</span>
+        </li>
+      ))
+    }
+  </ul>
+</CVSection>

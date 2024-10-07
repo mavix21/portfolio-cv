@@ -1,0 +1,36 @@
+---
+import CVSection from "../CVSection.astro";
+
+import { work } from "@cv-en";
+---
+
+<CVSection heading="Experience">
+  <ul>
+    {
+      work.map(({ name, startDate, endDate, position, summary }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate !== null ? new Date(endDate).getFullYear() : "Present";
+        const years = `${startYear} - ${endYear}`;
+
+        return (
+          <li>
+            <article class="space-y-2">
+              <header class="flex justify-between">
+                <div>
+                  <h3 class="text-lg font-bold">{name}</h3>
+                  <p class="text-zinc-800">{position}</p>
+                </div>
+                <time class="font-semibold">{years}</time>
+              </header>
+
+              <footer>
+                <p>{summary}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</CVSection>

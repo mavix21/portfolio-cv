@@ -1,0 +1,269 @@
+{
+  "basics": {
+    "name": "Marcelo Vizcarra",
+    "label": "Full Stack Developer",
+    "image": "https://placehold.co/120",
+    "email": "marcevizcarra@gmail.com",
+    "phone": "(912) 555-4321",
+    "url": "https://johndoe.com",
+    "summary": "Computer Science and Informatics student, with teamwork skills, fast learning and adaptation to change. I am interested in developing in areas such as Full Stack Web Development, Blockchain and DevOps. I love to learn new things every day and share my knowledge with the community.",
+    "location": {
+      "country": "Peru",
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "Lima",
+      "countryCode": "PE",
+      "region": "Lima"
+    },
+    "profiles": [
+      {
+        "network": "X",
+        "username": "Marcelo210909",
+        "url": "https://x.com/Marcelo210909"
+      },
+      {
+        "network": "GitHub",
+        "username": "mavix21",
+        "url": "https://github.com/mavix21"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "mavix21",
+        "url": "https://www.linkedin.com/in/marcelo-vizcarra-7459841b1"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Inventiva Solutions",
+      "position": "Full Stack Developer",
+      "url": "https://company.com",
+      "startDate": "2022-12-12",
+      "endDate": null,
+      "summary": "In this Software Developer role, I perform frontend, backend and database activities.The technologies I use are the following: .NET Core (C#), SQL Server, Ext.Net, Angular and Azure DevOps.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "CIBERTEC",
+      "url": "https://cibertec.com/",
+      "area": "Computer Science and Informatics",
+      "studyType": "Bachelor",
+      "startDate": "2022-01-02",
+      "endDate": null,
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "Sql Server",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": ".NET",
+      "level": "Avanzado",
+      "keywords": [
+        "Microserivces",
+        "Backend"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "LEarn!",
+      "isActive": true,
+      "description": "An education platform where people can earn money by learning.",
+      "highlights": [
+        "Side project",
+        "SaaS"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project",
+      "isActive": true,
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Project",
+      "isActive": true,
+      "description": "Description...",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "url": "https://project.com/"
+    }
+  ]
+}
